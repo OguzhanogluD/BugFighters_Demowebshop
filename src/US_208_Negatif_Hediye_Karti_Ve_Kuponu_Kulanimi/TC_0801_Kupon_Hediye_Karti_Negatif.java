@@ -1,0 +1,4 @@
+package US_208_Negatif_Hediye_Karti_Ve_Kuponu_Kulanimi;
+
+public class TC_0801_Kupon_Hediye_Karti_Negatif {
+}
