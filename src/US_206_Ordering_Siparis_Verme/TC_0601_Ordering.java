@@ -52,35 +52,35 @@ public class TC_0601_Ordering extends BaseDriver {
 
         WebElement loginPageLogin = driver.findElement(By.cssSelector("input[type='submit'][value='Log in']"));
         new Actions(driver).moveToElement(loginPageLogin).click().build().perform();
-//
-//        // Adres Sıfırlama
-//
-//        WebElement adress = driver.findElement(By.xpath("(((//div[@class='footer']/div)[1]/div)[3]//li)[3]/a"));
-//        jse.executeScript("arguments[0].click();", adress);
-//
-//        wait.until(ExpectedConditions.urlToBe("https://demowebshop.tricentis.com/customer/addresses"));
-//
-//        WebElement deleteAdress = driver.findElement(By.cssSelector("input[value='Delete']"));
-//        driverAksiyon.moveToElement(deleteAdress).click().build().perform();
-//        wait.until(ExpectedConditions.alertIsPresent());
-//        //MyFunc.Bekle(10);
-//        driver.switchTo().alert().accept();
-//        MyFunc.Bekle(20);
-//        // sayfadaki tüm elementler yüklenene kadar bekle için kendine locatorlar bul
-//        driver.navigate().refresh();
-//        MyFunc.Bekle(20);
-//        //driver.navigate().back();
-//        MyFunc.Bekle(10);
-//
-//        WebElement headerLogo = driver.findElement(By.xpath("//div[@class='header-logo']/a"));
-//        Action aksiyon29 = driverAksiyon.moveToElement(headerLogo).click().build();
-//        wait.until(ExpectedConditions.visibilityOf(headerLogo));
-//        aksiyon29.perform();
-//
-//        // Adres Sıfırlama Bitiş
+
+        // Adres Sıfırlama
+
+        WebElement adress = driver.findElement(By.xpath("(((//div[@class='footer']/div)[1]/div)[3]//li)[3]/a"));
+        jse.executeScript("arguments[0].click();", adress);
+
+        wait.until(ExpectedConditions.urlToBe("https://demowebshop.tricentis.com/customer/addresses"));
+
+        WebElement deleteAdress = driver.findElement(By.cssSelector("input[value='Delete']"));
+        driverAksiyon.moveToElement(deleteAdress).click().build().perform();
+        wait.until(ExpectedConditions.alertIsPresent());
+        //MyFunc.Bekle(10);
+        driver.switchTo().alert().accept();
+        MyFunc.Bekle(20);
+        // sayfadaki tüm elementler yüklenene kadar bekle için kendine locatorlar bul
+        driver.navigate().refresh();
+        MyFunc.Bekle(20);
+        //driver.navigate().back();
+        MyFunc.Bekle(10);
+
+        WebElement headerLogo = driver.findElement(By.xpath("//div[@class='header-logo']/a"));
+        Action aksiyon29 = driverAksiyon.moveToElement(headerLogo).click().build();
+        wait.until(ExpectedConditions.visibilityOf(headerLogo));
+        aksiyon29.perform();
+
+        // Adres Sıfırlama Bitiş
 
         // 3. Anasayfada "Computers" menüsünden "Notebook" altındaki "14.1-inch Laptop" ürününe tıklayın.
-        //wait.until(ExpectedConditions.urlToBe("https://demowebshop.tricentis.com/"));
+        wait.until(ExpectedConditions.urlToBe("https://demowebshop.tricentis.com/"));
 
         WebElement computer = driver.findElement(By.xpath("((//div[@class='listbox'])[1]//li)[2]/a"));
         Action aksiyon4 = driverAksiyon.moveToElement(computer).click().build();
